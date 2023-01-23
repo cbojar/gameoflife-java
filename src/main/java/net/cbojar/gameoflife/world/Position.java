@@ -55,6 +55,6 @@ public final class Position {
 
 	@Override
 	public String toString() {
-		return String.format("Position{row: %d, column: %d}", row, column);
+		return String.format("Position{row: %d, column: %d}", Integer.valueOf(row), Integer.valueOf(column));
 	}
 }

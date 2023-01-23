@@ -56,11 +56,12 @@ public final class DoubleCellBuffer implements CellBuffer {
 		clearBuffer(backBuffer);
 	}
 
+	@Override
 	public void clear() {
 		clearBuffer(frontBuffer);
 	}
 
-	private void clearBuffer(final boolean[][] buffer) {
+	private static void clearBuffer(final boolean[][] buffer) {
 		for (int row = 0; row < buffer.length; row++) {
 			for (int column = 0; column < buffer[row].length; column++) {
 				buffer[row][column] = false;

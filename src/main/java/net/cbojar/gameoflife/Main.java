@@ -4,7 +4,7 @@ import net.cbojar.gameoflife.ui.GameUI;
 import net.cbojar.gameoflife.world.*;
 
 public final class Main {
-	public static void main(final String... args) throws InterruptedException {
+	public static void main(final String... args) {
 		final World world = World.create(100, 100);
 		world.generate();
 
